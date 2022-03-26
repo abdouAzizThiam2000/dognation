@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Dognation Senegal</title>
+
+    <style>
+        .modal3 {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            -webkit-animation-name: fadeIn3;
+            /* Fade in the background */
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn3;
+            animation-duration: 0.4s
+        }
+
+        /* Modal Content */
+        .modal-content3 {
+
+            position: fixed;
+            bottom: 0;
+            background-color: var(--body-color);
+            width: 100%;
+            -webkit-animation-name: slideIn3;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn3;
+            animation-duration: 0.4s
+        }
+
+        /* The Close Button */
+        .close3 {
+            color: var(--text-color);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close3:hover,
+        .close3:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header3 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        .modal-body3 {
+            padding: 2px 16px;
+        }
+
+        .modal-footer3 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes slideIn3 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes slideIn3 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeIn3 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeIn3 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+
+        .modal1 {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            -webkit-animation-name: fadeIn1;
+            /* Fade in the background */
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn1;
+            animation-duration: 0.4s
+        }
+
+        /* Modal Content */
+        .modal-content1 {
+
+            position: fixed;
+            bottom: 0;
+            background-color: var(--body-color);
+            width: 100%;
+            -webkit-animation-name: slideIn1;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn1;
+            animation-duration: 0.4s
+        }
+
+        /* The Close Button */
+        .close1 {
+            color: var(--text-color);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close1:hover,
+        .close1:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header1 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        .modal-body1 {
+            padding: 2px 16px;
+        }
+
+        .modal-footer1 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes slideIn1 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes slideIn1 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeIn1 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeIn1 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+
+
+
+        .modal2 {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            -webkit-animation-name: fadeIn2;
+            /* Fade in the background */
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn2;
+            animation-duration: 0.4s
+        }
+
+        /* Modal Content */
+        .modal-content2 {
+
+            position: fixed;
+            bottom: 0;
+            background-color: var(--body-color);
+            width: 100%;
+            -webkit-animation-name: slideIn2;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn2;
+            animation-duration: 0.4s
+        }
+
+        /* The Close Button */
+        .close2 {
+            color: var(--text-color);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close2:hover,
+        .close2:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header2 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        .modal-body2 {
+            padding: 2px 16px;
+        }
+
+        .modal-footer2 {
+            padding: 2px 16px;
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes slideIn2 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes slideIn2 {
+            from {
+                bottom: -300px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeIn2 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fadeIn2 {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Dognation Senegal</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Acceuil</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Best Sellers</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <div id="blank"> </div>
+
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Dognation </h1>
+                    <h3 class="home__subtitle">Adoptez votre chiot<br> en toute securité.</h3>
+                    <a id="myBtn1" class="button">Chiots disponibles</a>
+                </div>
+
+                <img src="assets/img/about.svg" alt="" class="home__img">
+            </div>
+        </section>
+
+        <!--========== ABOUT ==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">À propos de nous</span>
+                    <h2 class="section-title about__initial">100% Africain <br> Par nous, pour vous.</h2>
+                    <p class="about__description">Dognation est le premier reseau social spécialisé dans la vente canine
+                        et d'accessoires pour chien au Sénégal. Nous livrons partout dans le monde.</p>
+                    <a id="myBtn2" class="button">Voir plus</a>
+                </div>
+
+                <img src="assets/img/rs1.svg" alt="" class="about__img">
+            </div>
+        </section>
+        <!--========== SERVICES ==========-->
+        <section class="services section bd-container" id="services">
+            <span class="section-subtitle">Nos services</span>
+            <h2 class="section-title">Dognation évolue dans plusieurs domaines. Nous vous assurons :
+            </h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+
+                    <img src="assets/img/dogg.svg" alt="" width="80px" height="80px">
+                    </svg>
+                    <h3 class="services__title">La vente de vos sujets</h3>
+                    <p class="services__description">Nous aidons les eleveurs canins à vendre leurs sujets par le biais
+                        de nos differents reseaux sociaux.
+                        En effet si vous avez un sujet à vendre vous pouvez directement nous envoyer un message sur la
+                        messagerie ( en bas à gauche ) ou sur nos differents Réseaux sociaux.
+                    </p>
+                </div>
+
+
+                <div class="services__content">
+                    <g clip-path="url(#clip0)">
+                        <img src="assets/img/dog.svg" alt="" width="70px" height="90px">
+
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="64" height="64" fill="white" />
+                        </clipPath>
+                    </defs>
+                    </svg>
+                    <h3 class="services__title">Conseils, dressage </h3>
+                    <p class="services__description">Vous songez à adopter un chiot mais n'avez jamais eu une experience
+                        dans le milieu canin, contactez nous et nous essaierons de repondre à toutes vos questions. Nous
+                        vous mettons egalement en rapport avec les meilleurs dresseurs du Senegal. </p>
+                </div>
+
+                <div class="services__content">
+                    <img src="assets/img/dog33.svg" alt="" width="70px" height="90px">
+
+                    <h3 class="services__title">Accessoires</h3>
+                    <p class="services__description"> Les accessoires sont essentielles si vous songez à adopter un
+                        chiot. Un chiot sans jouet et accessoires n'est rien d'autre qu'un enfant sans jouet et habit.
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+
+                    <img src="assets/img/plane.svg" alt="" width="80px" height="80px">
+                    </svg>
+                    <h3 class="services__title">Import/Export</h3>
+                    <p class="services__description">Grace à une equipe de transitaires chevronnés, nous vous assurons
+                        le transport de vos chiots du Senegal vers tous les pays du monde.
+                        Vous êtes interessé par une race trés rare ? Vous avez du mal en à trouver dans votre pays
+                        d'origine ? Pas de panique, notre equipe s'assurera de vous trouver un chien de qualité
+                        extraordinaire (pedigree si besoin) et de son transport au vers votre pays.
+                    </p>
+                </div>
+
+
+                <div class="services__content">
+                    <g clip-path="url(#clip0)">
+                        <img src="assets/img/farma.svg" alt="" width="70px" height="90px">
+
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="64" height="64" fill="white" />
+                        </clipPath>
+                    </defs>
+                    </svg>
+                    <h3 class="services__title">Veterinaires </h3>
+                    <p class="services__description">Nous collaborons avec plus d'une dizaine de Veterinaires au senegal
+                        et 1 gambie. Ces derniers pourrons vous aider à vacciner, pucer ou consulter vos chiens. </p>
+                </div>
+
+                <div class="services__content">
+                    <img src="assets/img/video.svg" alt="" width="70px" height="90px">
+
+                    <h3 class="services__title">Shooting/Tournage</h3>
+                    <p class="services__description"> Collaboration clip/video ou shooting.
+                </div>
+            </div>
+        </section>
+
+        <!--========== Projets ==========-->
+        <section class="menu section bd-container" id="menu">
+            <span class="section-subtitle">Nos Best Sellers</span>
+            <h2 class="section-title">Les Chiens les plus vendus en 2021</h2>
+
+            <div class="menu__container bd-grid">
+                <div class="menu__content">
+                    <img src="assets/img/pit.svg" alt="" class="menu__img">
+                    <h3 class="menu__name">Pitbull</h3>
+                    <span class="menu__detail"> en 2021</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-show'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/berger2.png" alt="" class="menu__img">
+                    <h3 class="menu__name">Berger Allemand</h3>
+                    <span class="menu__detail"> en 2021</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-show'></i></a>
+                </div>
+
+                <div class="menu__content">
+                    <img src="assets/img/husky.svg" alt="" class="menu__img">
+                    <h3 class="menu__name">Husky Syberien </h3>
+                    <span class="menu__detail"> en 2021</span>
+                    <a href="#" class="button menu__button"><i class='bx bx-show'></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services section bd-container">
+            <h2 class="section-title ">Nos Partenaires:</h2>
+
+            <div class="services__container  bd-grid">
+                <div class="services__content">
+
+                    <img src="assets/img/university1.svg" alt="" width="80px" height="80px">
+                    </svg>
+                    <h3 class="services__title"> </h3>
+                    <p class="services__description">Ferme du Saloum</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!--========== CONTACT US ==========-->
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Discutons</span>
+                    <h2 class="section-title contact__initial">Contactez nous</h2>
+                    <p class="contact__description">Vous pouvez nous contacter directement via le chatbot ou par mail.
+                        Nos equipes sont disponible 24h/j.</p>
+                </div>
+
+                <div class="contact__button">
+                    <a id="myBtn3" class="button"> Fondateurs</a>
+                    <!-- The Modal -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">Dognation Senegal</a>
+                <span class="footer__description">Eleveurs</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">E-learning</a></li>
+                    <li><a href="#" class="footer__link">E-Santé</a></li>
+                    <li><a href="#" class="footer__link">Application web et mobile </a></li>
+                    <li><a href="#" class="footer__link">E-Finance</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Bonne conduite </a></li>
+                    <li><a href="#" class="footer__link">+22177123445</a></li>
+                    <li><a href="#" class="footer__link">Travailler avec nous ?</a></li>
+                    <li><a href="#" class="footer__link">Charabia</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Adresse</h3>
+                <ul>
+                    <li>Senegal - Thies</li>
+                    <li>UIDT</li>
+                    <li>dognationsenegal@email.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2021 Iris Softech. Tous les droits reservés</p>
+    </footer>
+
+
+
+
+    <div id="myModal1" class="modal1">
+
+        <!-- Modal content -->
+        <div class="modal-content1">
+            <div class="modal-header1">
+                <span class="close1">&times;</span>
+                <h2>En cours de dev </h2>
+            </div>
+            <div class="modal-body1 section-subtitle">
+                <img src="assets/img/wait.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <div class="modal-header2">
+                <span class="close2">&times;</span>
+                <h2>En cours de dev</h2>
+            </div>
+            <div class="modal-body2 section-subtitle">
+                <img src="assets/img/wait.svg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="myModal3" class="modal3">
+
+        <!-- Modal content -->
+        <div class="modal-content3">
+            <div class="modal-header3">
+                <span class="close3">&times;</span>
+                <h2>Nos Pdgs</h2>
+            </div>
+            <div class="modal-body3">
+                <p> <b>
+                        <h3> <u> Bounama & Abdou Aziz Thiam </u> </h3>
+                    </b> </p>
+                <p>Dognation est une societé fondée en 2019 par deux dynamiques. Vous pouvez les contacter directement
+                    via le chatbox. </p>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- <div class="modal-footer3">
+                <h3> <a href="http://linkedin.com/in/ndeye-fatou-fall-7bb2a5173" class="footer__social"><i
+                            class='bx bxl-linkedin'></i></a>
+
+                    <a href="https://m.facebook.com/zara.c.fall?ref=bookmarks" class="footer__social"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://mobile.twitter.com/NdyeFatouFall3" class="footer__social"><i
+                            class='bx bxl-twitter'></i></a>
+                </h3>
+               
+
+
+            </div> -->
+        </div>
+
+    </div>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+    <script
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "b3c35f13-2ce9-44fc-a172-c239ff329ba3"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <script>
+
+        var modal1 = document.getElementById("myModal1");
+
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+
+
+
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+
+
+        // Get the modal
+        var modal3 = document.getElementById("myModal3");
+
+        // Get the button that opens the modal
+        var btn3 = document.getElementById("myBtn3");
+
+        // Get the <span> element that closes the modal
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        function disableScroll() {
+            document.body.style.overflow = 'hidden';
+            document.querySelector('html').scrollTop = window.scrollY;
+        }
+
+        function enableScroll() {
+            document.body.style.overflow = null;
+        }
+
+
+        // When the user clicks the button, open the modal 
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+            document.getElementById("header").style.display = "none";
+            document.getElementById("blank").style.display = "block";
+            document.getElementById("scroll-top").style.display = "none";
+            disableScroll();
+
+
+
+        }
+
+
+        // When the user clicks the button, open the modal 
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+            document.getElementById("header").style.display = "none";
+            document.getElementById("blank").style.display = "block";
+            document.getElementById("scroll-top").style.display = "none";
+            disableScroll();
+
+
+
+        }
+
+        // When the user clicks the button, open the modal 
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+            document.getElementById("header").style.display = "none";
+            document.getElementById("blank").style.display = "block";
+            document.getElementById("scroll-top").style.display = "none";
+            disableScroll();
+
+
+
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+            modal1.style.display = "none";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("blank").style.display = "none";
+            document.getElementById("scroll-top").style.display = "block";
+            enableScroll();
+
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function () {
+            modal2.style.display = "none";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("blank").style.display = "none";
+            document.getElementById("scroll-top").style.display = "block";
+            enableScroll();
+
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span3.onclick = function () {
+            modal3.style.display = "none";
+            document.getElementById("header").style.display = "block";
+            document.getElementById("blank").style.display = "none";
+            document.getElementById("scroll-top").style.display = "block";
+            enableScroll();
+
+        }
+
+
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+
+                document.getElementById("header").style.display = "block";
+                document.getElementById("blank").style.display = "none";
+                document.getElementById("scroll-top").style.display = "block";
+                enableScroll();
+
+
+
+            }
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+
+                document.getElementById("header").style.display = "block";
+                document.getElementById("blank").style.display = "none";
+                document.getElementById("scroll-top").style.display = "block";
+                enableScroll();
+
+
+
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+
+                document.getElementById("header").style.display = "block";
+                document.getElementById("blank").style.display = "none";
+                document.getElementById("scroll-top").style.display = "block";
+                enableScroll();
+
+
+
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
